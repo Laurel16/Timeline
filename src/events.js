@@ -2,6 +2,7 @@ let events = [
   {
     id: 1,
     title: "John Doe",
+    tag: "Identité",
     location: "Né le 14 décembre 1990, à Paris",
     description:
       "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
@@ -12,6 +13,7 @@ let events = [
   {
     id: 2,
     title: "B1",
+    tag: "casier judiciaire",
     location: "Nantes",
     description:
       "condamnation 1",
@@ -22,6 +24,7 @@ let events = [
   {
     id: 3,
     title: "Expertise pyschologique",
+    tag: "Enquête de personalité",
     location: "Expert: xx xx",
     description:
       "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
@@ -32,6 +35,7 @@ let events = [
   {
     id: 4,
     title: "Enquête sociale",
+    tag: "Enquête de personalité",
     location: "Enquêteur: xx xx",
     description:
      "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
@@ -42,6 +46,7 @@ let events = [
   {
     id: 5,
     title: "Suivi JAP",
+    tag: "Application des peines",
     location: "juge: xxxx",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque sagittis tellus, non ultrices lacus tempus vel.",
@@ -52,9 +57,11 @@ let events = [
   {
     id: 6,
     title: "Avis SPIP",
+    tag: "Application des peines",
     location: "auteur: xx xx",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque sagittis tellus, non ultrices lacus tempus vel.",
+    buttonText: "Voir l'avis",
     date: "2 juin 2020",
     icon: "spip",
   },

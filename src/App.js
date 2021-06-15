@@ -1,4 +1,5 @@
 import "./App.css";
+import Button from 'react-bootstrap/Button';
 import { FaBirthdayCake  as IdIcon} from 'react-icons/fa';
 import { MdGavel as BulletinIcon} from 'react-icons/md';
 import { GrUserExpert as ExpertIcon} from 'react-icons/gr';
@@ -52,6 +53,7 @@ function App() {
               iconStyle={isIdIcon ? idIconStyles : isExpertIcon ? expertIconStyles: isBulletinIcon ? bulletinIconStyles: isSocialIcon ? socialIconStyles: isJapIcon ? japIconStyles:  isSpipIcon ? spipIconStyles: expertIconStyles }
               icon={isIdIcon ? <IdIcon /> : isExpertIcon ?  <ExpertIcon />: isBulletinIcon ? <BulletinIcon/>: isSocialIcon ? <SocialIcon />: isJapIcon ? <JapIcon />: isSpipIcon ? <SpipIcon />: <ExpertIcon />}
             >
+            <Button variant="outline-dark"> {element.tag}</Button>
               <h3 className="vertical-timeline-element-title">
                 {element.title}
               </h3>
@@ -62,7 +64,7 @@ function App() {
               {showButton && (
                 <a
                   className={`button ${
-                    isIdIcon ? "idButton" : isExpertIcon ? "expertButton": isBulletinIcon ? "bulletinbutton" : isSocialIcon ? "socialbutton" : isJapIcon ? "japbutton" : isSpipIcon ? "spipbutton" : "expertButton"
+                    isIdIcon ? "idButton" : isExpertIcon ? "expertButton": isBulletinIcon ? "bulletinbutton" : isSocialIcon ? "socialbutton" : isSpipIcon ? "spipbutton" : isJapIcon ? "japbutton" : "expertButton"
                   }`}
                   href="/"
                 >
