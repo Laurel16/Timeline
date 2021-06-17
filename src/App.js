@@ -103,11 +103,11 @@ function App() {
 
                    )}
               { showAddress && (
-                 <p className= "identity" id="address"><FaRegAddressCard/>  {element.address}</p>
+                 <p className= "identity" id="address"><FaRegAddressCard size={22} style={{ marginBottom: '-5px', marginRight: "5px" }}/>  {element.address}</p>
                 )
               }
               { showNumber && (
-                 <p className= "identity" id="number"><ImProfile/>  {element.number}</p>
+                 <p className= "identity" id="number"><ImProfile size={20} style={{ marginBottom: '-5px', marginRight: "5px" }}/>  {element.number}</p>
                 )
               }
 

@@ -25,6 +25,7 @@ h3 {
   color: rgb(201, 251, 255);
 }
 
+.icon { font-size: 10px; }
 #description {
   margin: 1.5em 0 2em 0;
 }
@@ -40,7 +41,11 @@ h3 {
 
 .identity {
 font-size: 14px !important;
+margin-top: 0.5rem !important;;
 }
+
+
+/* Buttons */
 
 .button {
   text-decoration: none;
@@ -114,10 +119,6 @@ font-size: 14px !important;
   background-color:#db626c;
   opacity: 0.8;
 }
-
-
-
-
 
 
 
