@@ -29,7 +29,7 @@ function App() {
 
   return (
     <div>
-      <h1 className="title">Exemple de timeline</h1>
+      <h1 className="title">Dossier de personnalité</h1>
       <VerticalTimeline>
         {events.map((element) => {
           let isIdIcon = element.icon === "id";
@@ -53,12 +53,15 @@ function App() {
               iconStyle={isIdIcon ? idIconStyles : isExpertIcon ? expertIconStyles: isBulletinIcon ? bulletinIconStyles: isSocialIcon ? socialIconStyles: isJapIcon ? japIconStyles:  isSpipIcon ? spipIconStyles: expertIconStyles }
               icon={isIdIcon ? <IdIcon /> : isExpertIcon ?  <ExpertIcon />: isBulletinIcon ? <BulletinIcon/>: isSocialIcon ? <SocialIcon />: isJapIcon ? <JapIcon />: isSpipIcon ? <SpipIcon />: <ExpertIcon />}
             >
-            <Button variant="outline-dark"> {element.tag}</Button>
+            <Button variant="outline-dark" className="tag"> {element.tag}</Button>
               <h3 className="vertical-timeline-element-title">
                 {element.title}
               </h3>
               <h5 className="vertical-timeline-element-subtitle">
                 {element.location}
+              </h5>
+              <h5 className="vertical-timeline-element-subtitle">
+                {element.condamnation}
               </h5>
               <p id="description">{element.description}</p>
               {showButton && (
