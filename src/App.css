@@ -30,8 +30,18 @@ h3 {
 }
 
 .tag {
+  margin-bottom: 1em;
+  margin-right: 0.5em;
+}
+
+.list {
   margin: 0.5em;
 }
+
+.identity {
+font-size: 14px !important;
+}
+
 .button {
   text-decoration: none;
   padding: 0.5em 1em;
@@ -59,13 +69,21 @@ h3 {
   opacity: 0.8;
 }
 
-
-.expertButton {
+.proceduresbutton {
   background-color: #f9c74f;
 }
 
+.proceduresbuttonhover {
+  background-color: #f9c74f;
+  opacity: 0.8;
+}
+
+.expertButton {
+  background-color: #18b05a;
+}
+
 .expertButton:hover {
-  background-color: #f3bc3c;
+  background-color: #18b05a;
   opacity: 0.8;
 }
 
@@ -80,11 +98,11 @@ h3 {
 }
 
 .japbutton {
-  background-color: #cd69d1 ;
+  background-color: #db626c;
 }
 
 .japbutton:hover {
-  background-color: #cd69d1;
+  background-color: #db626c;
   opacity: 0.8;
 }
 
